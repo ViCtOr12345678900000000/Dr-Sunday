@@ -1,48 +1,74 @@
+<style>
+    body {
+padding: 25px;
+background-color: inherit;
+color: black;
+font-size: ;
+}
+       button{
+           background-color:inherit;
+           border: 1px solid black;
+           border-radius: 50px;
+           color:inherit;
+        }
+
+.dark-mode {
+background-image: url("https://wallpaperaccess.com/full/307193.jpg");
+color: white;
+}
+
+
+</style>
+
+<body>
+
+<button  onclick="myFunction()">Dark Mode</button>
+
+<script>
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+</script>
+
+
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1 class="header">Companion</h1>
-        <p><button type="button" class="b">Full Videos</button></p>
-        <p><button type="button"class="b">Segments</button></p>
-        <p><button type="button"class="b">About Creator & Software</button></p>
-    </body>
+    <form action="black testing.html" target="_blank">
+        <div>Click below to enter website</div>
+        <button class="class1" type="submit" name="enter"><p>ENTER</p></button>
+    </form>
 </html>
 <style>
     body{
-        background-image: url("https://image.freepik.com/free-vector/office-wallpaper-video-conferencing_23-2148653947.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation-name: backgroundchange;
-        animation-iteration-count: infinite;
-        animation-duration: 60s;
-        animation-delay: 5s;
-        animation-timing-function:ease-in-out;
-    }
-    h1{
+        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBwcHBw0ICAcHBw0HBwcICA8ICQcKIBEiIiARExMYHSggGBolGx8VITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrKy0rLSsrKys3KysrKysrKysrNysrLS0rKysrKystKystLTcrKysrKysrLSsrKysrK//AABEIASwAqAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABcQAQEBAQAAAAAAAAAAAAAAAAAREgH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAERIB/9oADAMBAAIRAxEAPwD1qJG4kaYZhGoAzCNAMwjRAZhGoQGYRqJFRIRYQEhFhASEWEFSEWLBGYNQBoAEFCCCoQAAAFAAAAAAAAAAAAFEAVAEoAACCKIAogoogCiAKgIKIAoigCAKgiiiUoKJUoiiUoKM0BorJQapWaUGhkBoZKDSs0BREBaVAAQEUQCqIKlUZArQyBWhkCtDIFaGShWhKgVQqVFqiVFSrRARSpUojSJQFESg0MgNDIDQyUGhAFEoC0QoKiAKiUBSslVKtKzSkStUrNFK1Ss0CtUrJQrVKyUK1RmrUWtUZoFaqICrUSpRK1UqJVRRCiKVmlBpKzSiNUrNKo1Ss0oNUSlRWhkoNCIDaUrKL1RKiopUqVRaVnvUojVSs0ojVKzSgohQVayUGqtYpRW6tY51aK1RmgN96lOsoqlSpRFqd6lO9VDvUqFEVKiUGqVmpVRqrWKtBqlZq0VqlZpUGlrNKNNUSgNoDLURKqKhUqCoIIJFSoKhUEBVrIEaq1kFjVKgK0VlUVoQRY6oojTJ1UEidZaiLUjI0kKRlGokVIiNQhSMjUIUiDUCrEhFhEWAsILAVBY7wjcIw1HOJHSJFqRziR1iQpHKEdIQqRyhHTJlaZc4kdcmSrlzhHXJkplyyuXTK5SrlyyZdcmSrHPJl0yZKRiDpkSrl1hHSJGa3HOEdIZKZcoR0ymSplzyZdMmSmXPJl0yZKZc8mXTK5KuXPJl0hCmWMmXSEKuXPJHSEKRzyR0yZKuXODpBKR0hGoRmtRiEaIVcsQjaQplmEaCmWYRoKZZhGgpGYsUKsSEUKRCKFWJOJGgpEiNCUjojQDMRpEVIkaAjMFAQWEFiCwgREahAiCgqEVYDMI1CAkFig0NIMMjUQVkaSAkFBWRoBmEVQZGgGVUBIRYoMxYsIFQagCgDKAAIoCAC0ACgAUIoFSLAEpCKBQgoAKDAgCogCpRAWiAKIA0IAqoAohQaEFFqs0ErVGQH//Z");
         text-align: center;
-        color: rgb(126, 58, 58);
-        margin-top: 20%;
-        font-size: 50px;
+        transition: 0.5s ease-in-out;
+        background-size: cover;
+    }
+    .class1{
+        background-color: inherit;
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        border-radius: 50px;
+        margin-top: 15%;
+        color: inherit;
+
+    }
+    .class1:hover{
+    background-color:white;
+    font-family:'Roboto', sans-serif;
+    color:black;
     }
     p{
-        text-align: center;
-        display: inline;
-        padding: 5pc;
-        margin-left: 12%;
         font-size: 20px;
+        font-weight: 700;
+    font-family: 'cursive';
+    color: white, black;
     }
-    .b{
-        margin-top: 5%;
-        color: rgb(126, 58, 58);
-        background-color: inherit;
-        height: 50px;
-        border-radius: 50px;
-    }
-    @keyframes backgroundchange{
-        30%{background-image: url("https://i.pinimg.com/736x/b3/cd/e2/b3cde218d62d5075aa9e93b5a653f426.jpg");}
-        50%{background-image: url("https://media.istockphoto.com/photos/white-office-desk-with-copy-space-open-notebook-keyboard-coffee-and-picture-id1277758901?b=1&k=20&m=1277758901&s=170667a&w=0&h=u_dkWMN7S3d4czXzxM_2YNTXBS3M6FTLb8KEhQ-uCME=");}
+    div{
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-top: 200px;
     }
 </style>
