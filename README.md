@@ -33,7 +33,7 @@ element.classList.toggle("dark-mode");
 
 
 <html>
-    <form action="black testing.html" target="_blank">
+    <form action="Softspot.html" target="_blank">
         <div>Click below to enter website</div>
         <button class="class1" type="submit" name="enter"><p>ENTER</p></button>
     </form>
