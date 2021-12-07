@@ -5,9 +5,9 @@
     </head>
     <body>
         <h1 class="header">Companion</h1>
-        <p><button type="button" class="b">Full Videos</button></p>
-        <p><button type="button"class="b">Segments</button></p>
-        <p><button type="button"class="b">About Creator & Software</button></p>
+        <p><button type="button" class="b" id="a">Full Videos</button></p>
+        <p><button type="button"class="b" id="b">Segments</button></p>
+        <p><button type="button"class="b" id="c">About Creator & Software</button></p>
     </body>
 </html>
 <style>
@@ -26,13 +26,18 @@
         color: rgb(126, 58, 58);
         margin-top: 20%;
         font-size: 50px;
+        animation-name: textchange;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
     }
     p{
         text-align: center;
         display: inline;
-        padding: 5pc;
+        padding: 3pc;
         margin-left: 12%;
-        font-size: 20px;
+        font-size: 30px;
+        font-weight: 600;
     }
     .b{
         margin-top: 5%;
@@ -40,10 +45,66 @@
         background-color: inherit;
         height: 50px;
         border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        animation-name: textchange;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+    
     }
     @keyframes backgroundchange{
         30%{background-image: url("https://i.pinimg.com/736x/b3/cd/e2/b3cde218d62d5075aa9e93b5a653f426.jpg");}
-        50%{background-image: url("https://media.istockphoto.com/photos/white-office-desk-with-copy-space-open-notebook-keyboard-coffee-and-picture-id1277758901?b=1&k=20&m=1277758901&s=170667a&w=0&h=u_dkWMN7S3d4czXzxM_2YNTXBS3M6FTLb8KEhQ-uCME=");
-    color: white;}
+        50%{background-image: url("https://media.istockphoto.com/photos/white-office-desk-with-copy-space-open-notebook-keyboard-coffee-and-picture-id1277758901?b=1&k=20&m=1277758901&s=170667a&w=0&h=u_dkWMN7S3d4czXzxM_2YNTXBS3M6FTLb8KEhQ-uCME=");}
+    }
+    @keyframes textchange{
+        30%{color: white;}
+    }
+    #a:hover{
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    #b:hover{
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    #c:hover{
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+<style>
+    @media screen and (max-width: 700px){
+        p{
+        text-align: center;
+        display: block;
+        padding: 10px;
+        margin-left: 12%;
+        font-size: 20px;
+        font-weight: 600; 
+        }
+    }
+    @media screen and (max-width: 1000px){
+        p{
+        text-align: center;
+        display: block;
+        padding: 10px;
+        margin-left: 1%;
+        font-size: 20px;
+        font-weight: 600; 
+        }
+    }
+    @media screen and (orientation: landscape){
+        p{
+        text-align: center;
+        display: inline;
+        padding: 10px;
+        margin-left: 12%;
+        font-size: 20px;
+        font-weight: 600; 
+        }
     }
 </style>
