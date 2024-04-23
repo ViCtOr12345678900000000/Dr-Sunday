@@ -1,111 +1,173 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1 class="header">Companion</h1>
-        <p><button type="button" class="b" id="a">Full Videos</button></p>
-        <p><button type="button"class="b" id="b">Segments</button></p>
-        <p><button type="button"class="b" id="c">About Creator & Software</button></p>
-    </body>
-</html>
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<div id="first-container">
+    <p><h1 id="header-name">JHINORA STUDIOS</h1></p>
+    <p><h5 id="sub-name">STRATEGY & CREATIVITY</h5></p><
+    <p><h4 id="sub-name1">for tomorrow iconic lifestyle travel </h5></p>
+    <div id="smallcontainer1"><img src="https://joy.imgix.net/a/BkoE-460f?fit=crop&w=750&h=1275&auto=compress&s=e2f38c9b6a4cb0640f00246b4e7d5259"></div>
+    <div id="smallcontainer2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmkRpBMHTcaaEDKePisjh3aYnbaTPxi7fSA&usqp=CAU"></div>
+</div>
+
+<div class="navbar">
+<span onclick="openNav()" style="font-size: 50px;">&equiv;</span>
+<p><h1 id="header-name1">JHINORA STUDIOS</h1></p>
+</div>
+
+<div class="whitespace">
+    <p id="whitespace1">AT JHINORA WE BUILD INFLUENTIAL BRANDS</p>
+    <p id="whitespace2">that are <i>difficult</i> to ignore</p>
+</div>
+
+
+
+
+
 <style>
-    
-    body{
-        background-image: url("https://image.freepik.com/free-vector/office-wallpaper-video-conferencing_23-2148653947.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation-name: backgroundchange;
-        animation-iteration-count: infinite;
-        animation-duration: 60s;
-        animation-delay: 5s;
-        animation-timing-function:ease-in-out;
+    @media (width >= 700px){
+        
+    .navbar{
+        display: flex;
+        background-color: white;
     }
-    h1{
+    span{
+        margin-left: 95vw;
+    }
+    .whitespace{
+        background-color: white;
         text-align: center;
-        color: rgb(126, 58, 58);
-        margin-top: 20%;
-        font-size: 50px;
-        animation-name: textchange;
-        animation-duration: 60s;
-        animation-iteration-count: infinite;
-        animation-delay: 5s;
+        align-content: center;   
+        height: 50vh; 
     }
-    p{
-        text-align: center;
-        display: inline;
-        padding: 3pc;
-        margin-left: 12%;
-        font-size: 30px;
-        font-weight: 600;
+    #whitespace1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .b{
-        margin-top: 5%;
-        color: rgb(126, 58, 58);
-        background-color: inherit;
-        height: 50px;
-        border-radius: 50px;
+    #whitespace2{
         font-size: 20px;
-        font-weight: 500;
-        animation-name: textchange;
-        animation-duration: 60s;
-        animation-iteration-count: infinite;
-        animation-delay: 5s;
-    
+        font-family:"Pacifico", cursive;
     }
-    @keyframes backgroundchange{
-        30%{background-image: url("https://i.pinimg.com/736x/b3/cd/e2/b3cde218d62d5075aa9e93b5a653f426.jpg");}
-        50%{background-image: url("https://media.istockphoto.com/photos/white-office-desk-with-copy-space-open-notebook-keyboard-coffee-and-picture-id1277758901?b=1&k=20&m=1277758901&s=170667a&w=0&h=u_dkWMN7S3d4czXzxM_2YNTXBS3M6FTLb8KEhQ-uCME=");}
+    #first-container{
+        height: 100vh;
+        width:auto;
+        display: flex;
+        flex-wrap: nowrap;
     }
-    @keyframes textchange{
-        30%{color: white;}
+    img{
+        height: 100vh;
+        width: 50vw;
+        
+        object-fit: cover;
+        
     }
-    #a:hover{
-        cursor: pointer;
-        transform: scale(1.1, 1.1);
-        transition: transform 0.3s ease-in-out;
+    #smallcontainer1{
+        
+        width: 50%;
+       
     }
-    #b:hover{
-        cursor: pointer;
-        transform: scale(1.1, 1.1);
-        transition: transform 0.3s ease-in-out;
+    #smallcontainer2{
+        
+        width: 50%;
+        
+        
     }
-    #c:hover{
-        cursor: pointer;
-        transform: scale(1.1, 1.1);
-        transition: transform 0.3s ease-in-out;
+    #header-name{
+        position: absolute;
+        margin-left: 40vw;
+        transform: translate3d(0px, 0vh, 0px) scale(1.2721, 1.2721);
+        font-family: "Poiret One", sans-serif;
+        color: white;
+        font-weight: 100;
+        scale: 2 1 ;
+        margin-top: 10vh;
     }
+    #header-name1{
+        position: absolute;
+        margin-left: 3vw;
+        transform: translate3d(0px, 0vh, 0px) scale(1.2721, 1.2721);
+        font-family: "Poiret One", sans-serif;
+        color: black;
+        font-weight: 100;
+        scale: ;
+        
+    }
+    #sub-name{
+        position: absolute;
+        margin-top: 45vh;
+        color: white;
+        font-size: 30px;
+        margin-left: 30vw;
+        font-weight: 100;
+        font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    }
+    #sub-name1{
+        position: absolute;
+        margin-top: 55vh;
+        color: white;
+        font-size: 70px;
+        margin-left: 30vw;
+        font-weight: 400;
+        font-family: "Tangerine", cursive;
+    }
+}
 </style>
 <style>
-    @media screen and (max-width: 800px){
-        p{
-        text-align: center;
-        display: block;
-        padding: 10px;
-        margin-left: 1%;
-        font-size: 20px;
-        font-weight: 600; 
-        }
+    @media screen and (orientation:portrait){
+
+        .navbar{
+        display: flex;
+        background-color: white;
+        
     }
-    @media screen and (max-width: 1000px){
-        p{
+    .whitespace{
+        background-color: white;
         text-align: center;
-        display: block;
-        padding: 10px;
-        margin-left: 1%;
-        font-size: 20px;
-        font-weight: 600; 
-        }
+        align-content: center;   
+        height: 30vh; 
     }
-    @media screen and (orientation: landscape){
-        p{
-        text-align: center;
-        display: inline;
-        padding: 10px;
-        margin-left: 17%; 
-        font-size: 20px;
-        font-weight: 600; 
-        }
+    span{
+        margin-left: 95vw;
+    }
+        #sub-name{
+        position: absolute;
+        margin-top: 75vh;
+        color: white;
+        font-size: 40px;
+        margin-left: 27vw;
+        font-weight: 100;
+        font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    }
+    #sub-name1{
+        position: absolute;
+        margin-top:80vh;
+        color: white;
+        font-size: 70px;
+        margin-left: 30vw;
+        font-weight: 400;
+        font-family: "Tangerine", cursive;
+    }
+    
+    #header-name{
+        position: absolute;
+        margin-left: 40vw;
+        transform: translate3d(0px, 0vh, 0px) scale(1.2721, 1.2721);
+        font-family: "Poiret One", sans-serif;
+        color: white;
+        font-weight: 100;
+        scale: 2.5 2 ;
+        margin-top: 5vh;
+    }
+
     }
 </style>
